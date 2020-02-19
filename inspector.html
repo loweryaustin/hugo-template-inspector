@@ -59,6 +59,14 @@
                 {{ end }}
                 </ul>
             </li>
+            <li>.RegularPages:
+                <ul>
+                {{ range .RegularPages }}
+                    <li class="hti-subli"><b>{{ printf "#v%" . }}</b></li>
+                {{ end }}
+                </ul>
+            </li>
+
             <li>.AlternativeOutputFormats:
                 <ul>
                 {{ range .AlternativeOutputFormats }}
