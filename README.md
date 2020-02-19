@@ -16,7 +16,7 @@ This utility is intended to be used by developers who are creating or modifying 
 
 ## Requirements
 
-HTI was built while using Hugo v0.64.1. Compatibility with other versions is not currently known.
+HTI was built while using Hugo `v0.64.1`. Compatibility with other versions is not currently known.
 
 ## Defects, Improvements, etc.
 
@@ -45,19 +45,19 @@ The following guidelines are important to consider before making a feature reque
 
 ## Usage
 
-Copy the inspector.html into your partials directory. The partials directory can be located under the layouts directory either under the main site root, or within your theme. The following is where this file lives on my particular installation. Your exact loction will likely be different:
+Copy the `inspector.html` into your partials directory. The partials directory can be located under the layouts directory either under the main site root, or within your theme. The following is where this file lives on my particular installation. Your exact loction will likely be different:
 ```
 /Users/username/Sites/websitedir/themes/mycustomtheme/layouts/partials/inspector.html
 ```
 
-Once the inspector.html file is in place, you'll need to paste the following somewhere in your baseof.html template:
+Once the inspector.html file is in place, you'll need to paste the following somewhere in your `baseof.html` template:
 ```
 {{- partial "inspector.html" . -}}
 ```
 
-I usually put that directly under the opening <body> tag.
+I usually put that directly under the opening `<body>` tag.
 
-On a Linux or Mac system, you can find your baseof.html template with the following command:
+On a Linux or Mac system, you can find your `baseof.html` template with the following command:
 ```
 find ~ -name baseof.html 2> /dev/null
 ```
@@ -72,11 +72,8 @@ Then browse to your site at:
 http://localhost:1313
 ```
 
-And finally activate the modal by pressing the q key.
+And finally activate the modal by pressing the `q` key.
 
-To hide the modal, press the q key again.
+To hide the modal, press the `q` key again.
 
 ## Screenshot
-
-
-
