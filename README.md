@@ -2,6 +2,14 @@
 
 The Hugo Template Inspector is a helper template that prints all template variables in a modal.
 
+## Warning
+
+You should **NOT** use this utility on a site that is acessible to the public. This utility prints a lot of data about your site and server. Some of which could pose security risks if the data were accessible to nefarious individuals (about half of the internet).
+
+### Aww, but Austin, I really want to use this on my publically acessible site!
+
+ಠ_ಠ
+
 ## Target Audience
 
 This utility is intended to be used by developers who are creating or modifying Hugo templates.
