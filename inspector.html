@@ -153,6 +153,7 @@
                 </pre>
             </div>
             <h4>.RawContent</h4>
+            m
             <div id="hti-raw-page-content">
                 <pre>
                 {{ .RawContent }}
@@ -166,7 +167,7 @@
     </section>
     <section id="hti-site-vars">
         <header>
-            <h4>Site Variables</h4>
+            <h3>Site Variables</h3>
         </header>
         <section>
             <ul>
@@ -174,6 +175,19 @@
                 <li>.Site.BaseURL: <b>{{ .Site.BaseURL }}</b></li>
                 <li>.Site.BuildDrafts: <b>{{ .Site.BuildDrafts }}</b></li>
                 <li>.Site.Copyright: <b>{{ .Site.Copyright }}</b></li>
+                <li>.Site.DisqusShortname: <b>{{ .Site.DisqusShortname }}</b></li>
+                <li>.Site.GoogleAnalytics: <b>{{ .Site.GoogleAnalytics }}</b></li>
+                <li>.Site.Home: <b>{{ .Site.Home}}</b></li>
+                <li>.Site.IsMultiLingual: <b>{{ .Site.IsServer }}</b></li>
+                <li>.Site.Language.Lang: <b>{{ .Site.Language.Lang }}</b></li>
+                <li>.Site.Language.LanguageName: <b>{{ .Site.Language.LanguageName }}</b></li>
+                <li>.Site.Language.Weight: <b>{{ .Site.Language.Weight }}</b></li>
+                <li>.Site.Language: <b>{{ .Site.Language }}</b></li>
+                <li>.Site.LanguageCode: <b>{{ .Site.LanguageCode }}</b></li>
+                <li>.Site.LanguagePrefix: <b>{{ .Site.LanguagePrefix }}</b></li>
+                <li>.Site.Languages: <b>{{ .Site.Languages }}</b></li>
+                <li>.Site.LastChange: <b>{{ .Site.LastChange }}</b></li>
+                <li>.Site.Title: <b>{{ .Site.Title }}</b></li>
                 <li>.Site.AllPages:
                     <ul>
                     {{ range .Site.AllPages }}
@@ -188,7 +202,48 @@
                     {{ end }}
                     </ul>
                 </li>
-
+                <li>.Site.Menus:
+                    <ul>
+                    {{ range .Site.Menus }}
+                        <li class="hti-subli"><b>{{ printf "#v%" . }}</b></li>
+                    {{ end }}
+                    </ul>
+                </li>
+                <li>.Site.Pages:
+                    <ul>
+                    {{ range .Site.Pages }}
+                        <li class="hti-subli"><b>{{ printf "#v%" . }}</b></li>
+                    {{ end }}
+                    </ul>
+                </li>
+                <li>.Site.RegularPages:
+                    <ul>
+                    {{ range .Site.RegularPages }}
+                        <li class="hti-subli"><b>{{ printf "#v%" . }}</b></li>
+                    {{ end }}
+                    </ul>
+                </li>
+                <li>.Site.Sections:
+                    <ul>
+                    {{ range .Site.Sections }}
+                        <li class="hti-subli"><b>{{ printf "#v%" . }}</b></li>
+                    {{ end }}
+                    </ul>
+                </li>
+                <li>.Site.Taxonomies:
+                    <ul>
+                    {{ range .Site.Taxonomies }}
+                        <li class="hti-subli"><b>{{ printf "#v%" . }}</b></li>
+                    {{ end }}
+                    </ul>
+                </li>
+                <li>.Site.Params:
+                    <ul>
+                    {{ range .Site.Params }}
+                        <li class="hti-subli"><b>{{ printf "#v%" . }}</b></li>
+                    {{ end }}
+                    </ul>
+                </li>
             </ul>
         </section>
     </section>
