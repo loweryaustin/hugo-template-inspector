@@ -7,7 +7,7 @@ assignees: loweryaustin
 
 ---
 
-** Who is the target audience for this feature **
+**Who is the target audience for this feature**
 Examples:
 As a developer I want...
 As a website visitor I want..
