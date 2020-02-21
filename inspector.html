@@ -162,6 +162,28 @@
             </div>
         </section>
     </section>
+    <section id="hti-taxonomy-vars">
+        <header>
+            <h3>Taxonomy Variables</h3>
+        </header>
+        <section>
+            <ul>
+                <li>.Data.Singular: <b>{{ .Data.Singular }}</b></li>
+                <li>.Data.Plural: <b>{{ .Data.Plural }}</b></li>
+                <li>.Data.Terms:
+                    <ul>
+                    {{ range .Data.Terms }}
+                        <li class="hti-subli"><b>{{ printf "#v%" . }}</b></li>
+                    {{ end }}
+                    </ul>
+                </li>
+                <li>.Data.Terms.Alphabetical: <b>Same as Above, just sorted</b></li>
+                <li>.Data.Terms.Alphabetical.Reverse: <b>Same as Above, just sorted</b></li>
+                <li>.Data.Terms.ByCount: <b>Same as Above, just sorted</b></li>
+                <li>.Data.Terms.ByCount.Reverse: <b>Same as Above, just sorted</b></li>
+            </ul>
+        </section>
+    </section>
 </div>
 <script type="text/javascript">
 	var htiToggle = function() {
