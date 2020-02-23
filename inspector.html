@@ -285,6 +285,26 @@
             </ul>
         </section>
     </section>
+    <section id="hti-hugo-vars">
+        <header>
+            <h3>Hugo Vars</h3>
+            <p>Check documentation for <a href="https://gohugo.io/variables/hugo/">deprecation notice</a>.</p>
+        </header>
+        <section>
+            <ul>
+                <li>.Hugo.Generator: 
+                    <textarea id="hti-hugo-generator">
+                   {{ .Hugo.Generator }}
+                    </textarea>
+                </li>
+                <li>.Hugo.Version: <b>{{ .Hugo.Version }}</b></li>
+                <li>.Hugo.Environmet: <b>{{ .Hugo.Environment }}</b></li>
+                <li>.Hugo.CommitHash: <b>{{ .Hugo.CommitHash }}</b></li>
+                <li>.Hugo.BuildDate: <b>{{ .Hugo.BuildDate }}</b></li>
+            </ul>
+        </section>
+    </section>
+
 </div>
 <script type="text/javascript">
 	var htiToggle = function() {
