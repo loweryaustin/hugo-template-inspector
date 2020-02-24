@@ -20,8 +20,6 @@ This utility is intended to be used by developers who are creating or modifying 
 
 HTI was built while using Hugo `v0.64.1`. Compatibility with other versions is not currently known.
 
- New additions should avoid creating compatibility issues with other software that it HTI would co-exist with.
-
 ## Usage
 
 Copy the `inspector.html` into your partials directory. The partials directory can be located under the layouts directory either under the main site root, or within your theme. The following is where this file lives on my particular installation. Your exact loction will likely be different:
