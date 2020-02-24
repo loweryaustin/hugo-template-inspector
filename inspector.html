@@ -309,11 +309,13 @@
             <h3>Menu Entry Vars</h3>
         </header>
         <section>
-            {{ range $index, $element, .Site.Menus }} 
-                https://golang.org/pkg/text/template/
-                https://gohugo.io/functions/reflect.isslice/
-#### Right now I am working on trying to figure out how to iterate over all of the menus for the site, no matter what they are named. Not sure if this is possible yet, but I have a feeling I might be able to do it by accessing $index or $element or something.
-            <ul>
+            {{ range $index, $element := .Site.Menus }} 
+            <header>     
+                <h4> MENU: {{ $index }} </h4>
+            </header>
+                <p>Below are listed the variable definitions for each menu entry on the <b>{{ $index }}</b> menu.</p>
+                {{ range $element }}
+             <ul>
                 <li>Variables:
                     <ul>
                         <li>.Menu: <b>{{ .Menu }}</b></li>
@@ -332,14 +334,13 @@
                     <ul>
                         <li>.HasChildren: <b>{{ .HasChildren }}</b></li>
                         <li>.KeyName: <b>{{ .KeyName }}</b></li>
-                        <li>.IsEqual: <b>{{ .IsEqual }}</b></li>
-                        <li>.IsSameResource: <b>{{ .IsSameResource }}</b></li>
-                        <li>.Title: <b>{{ .IsSameResource }}</b></li>
-                        <li>.IsMenuCurrent: <b>{{ .IsMenuCurrent }}</b></li>
-                        <li>.HasMenuCurrent: <b>{{ .HasMenuCurrent }}</b></li>
-                    </ul>
+                        <li>.Title: <b>{{ .Title }}</b></li>
+                    </ul> 
                 </li>
             </ul>
+            {{ end }}
+
+            {{ end }}
         </section>
     </section>
 
