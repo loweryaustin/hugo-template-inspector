@@ -343,7 +343,18 @@
             {{ end }}
         </section>
     </section>
-
+    <section id="hti-sitemap-vars">
+        <header>
+            <h3>Sitemap Vars</h3>
+        </header>
+        <section>
+            <ul>
+                <li>.Sitemap.ChangeFreq: <b>{{ .Sitemap.ChangeFreq }}</b></li>
+                <li>.Sitemap.Priority: <b>{{ .Sitemap.Priority }}</b></li>
+                <li>.Sitemap.Filename: <b>{{ .Sitemap.Filename }}</b></li>
+            </ul>
+        </section>
+    </section>
 </div>
 <script type="text/javascript">
 	var htiToggle = function() {
