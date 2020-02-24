@@ -293,7 +293,7 @@
         <section>
             <ul>
                 <li>.Hugo.Generator: 
-                    <textarea id="hti-hugo-generator">
+                    <stextarea id="hti-hugo-generator">
                    {{ .Hugo.Generator }}
                     </textarea>
                 </li>
@@ -302,6 +302,45 @@
                 <li>.Hugo.CommitHash: <b>{{ .Hugo.CommitHash }}</b></li>
                 <li>.Hugo.BuildDate: <b>{{ .Hugo.BuildDate }}</b></li>
             </ul>
+        </section>
+    </section>
+    <section id="hti-menu-vars">
+        <header>
+            <h3>Menu Entry Vars</h3>
+        </header>
+        <section>
+            {{ range $index, $element := .Site.Menus }} 
+            <header>     
+                <h4> MENU: {{ $index }} </h4>
+            </header>
+                <p>Below are listed the variable definitions for each menu entry on the <b>{{ $index }}</b> menu.</p>
+                {{ range $element }}
+             <ul>
+                <li>Variables:
+                    <ul>
+                        <li>.Menu: <b>{{ .Menu }}</b></li>
+                        <li>.URL: <b>{{ .URL }}</b></li>
+                        <li>.Page: <b>{{ .Page }}</b></li>
+                        <li>.Name: <b>{{ .Name }}</b></li>
+                        <li>.Identifier: <b>{{ .Identifier }}</b></li>
+                        <li>.Pre: <b>{{ .Pre }}</b></li>
+                        <li>.Post: <b>{{ .Post }}</b></li>
+                        <li>.Weight: <b>{{ .Weight }}</b></li>
+                        <li>.Parent: <b>{{ .Parent }}</b></li>
+                        <li>.Children: <b>{{ .Children }}</b></li>
+                    </ul>
+                </li>
+                <li>Functions:
+                    <ul>
+                        <li>.HasChildren: <b>{{ .HasChildren }}</b></li>
+                        <li>.KeyName: <b>{{ .KeyName }}</b></li>
+                        <li>.Title: <b>{{ .Title }}</b></li>
+                    </ul> 
+                </li>
+            </ul>
+            {{ end }}
+
+            {{ end }}
         </section>
     </section>
 
