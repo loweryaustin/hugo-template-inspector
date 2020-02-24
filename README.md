@@ -2,7 +2,7 @@
 
 The Hugo Template Inspector is a helper template that prints all template variables in a modal.
 
-**Version:** 0.13.0
+**Version:** 0.15.0
 
 ## Warning
 
