@@ -2,7 +2,16 @@
 
 The Hugo Template Inspector is a helper template that prints all template variables in a modal.
 
-**Version:** 0.15.0
+![Hugo Template Inspector Version](https://img.shields.io/badge/Version-0.15.2--alpha-brightgreen)
+
+![Release Date](https://img.shields.io/badge/Release%20Date-Mon%2024%20Feb%202020-brightgreen)
+
+![Next Release Date](https://img.shields.io/badge/Next%20Release-Mon%2002%20Mar%202020-blue)
+
+
+![GitHub issues by-label](https://img.shields.io/github/issues-raw/loweryaustin/hugo-template-inspector/Defect?color=red&label=Open%20Defects)
+
+![GitHub issues by-label](https://img.shields.io/github/issues-raw/loweryaustin/hugo-template-inspector/enhancement?color=green&label=Open%20Feature%20Requests)
 
 ## Warning
 
@@ -19,31 +28,6 @@ This utility is intended to be used by developers who are creating or modifying 
 ## Requirements
 
 HTI was built while using Hugo `v0.64.1`. Compatibility with other versions is not currently known.
-
-## Defects, Improvements, etc.
-
-If you find a problem with HTI, or you have a feature request, please create a GitHub issue with the following information:
-
-### For Defect Reports
-
-- Your version of Hugo
-- The filesystem path to the inspector.html file.
-- The information that proves that the defect is caused by HTI.
-- If an error is produced, a copy of the error in both text format and screenshot.
-- If undesireable behavior occurs, a description of the undesireble behavior.
-- The steps required to reproduce the problem.
-- Any related resources you may have found while researching to confirm that the problem is caused by HTI.
-
-### For Improvement/Feature Requests
-
-- A description of the problem that your proposed feature / improvement would solve.
-- A description of how your proposed feature would work / or change the current behavior of HTI.
-- Any suggestions you might have about how the feature / improvement might be implemented.
-
-The following guidelines are important to consider before making a feature request:
-
-- HTI should remain a single file without external dependancies
-- New additions should avoid creating compatibility issues with other software that it HTI would co-exist with.
 
 ## Usage
 
