@@ -6,7 +6,7 @@ The Hugo Template Inspector is a helper template that prints all template variab
 
 ![Release Date](https://img.shields.io/badge/Release%20Date-Mon%2024%20Feb%202020-brightgreen)
 
-![Next Release Date](https://img.shields.io/badge/Next%20Release-Mon%2002%20Mar%202020-brightgreen)
+![Next Release Date](https://img.shields.io/badge/Next%20Release-Mon%2002%20Mar%202020-blue)
 
 
 ![GitHub issues by-label](https://img.shields.io/github/issues-raw/loweryaustin/hugo-template-inspector/Defect?color=red&label=Open%20Defects)
