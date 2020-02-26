@@ -2,7 +2,7 @@
 
 The Hugo Template Inspector is a helper template that prints all template variables in a modal.
 
-![Hugo Template Inspector Version](https://img.shields.io/badge/Version-0.15.2--alpha-brightgreen)
+![Hugo Template Inspector Version](https://img.shields.io/badge/Version-0.16.0--alpha-brightgreen)
 
 ![Release Date](https://img.shields.io/badge/Release%20Date-Mon%2024%20Feb%202020-brightgreen)
 
